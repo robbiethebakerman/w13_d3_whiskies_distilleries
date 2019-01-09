@@ -28,4 +28,20 @@ public class WhiskyRepositoryImpl implements WhiskyRepositoryCustom {
 
         return results;
     }
+
+//    public List<Whisky> getAllWhiskiesByRegion(String region) {
+//        List<Whisky> results = null;
+//        Session session = entityManager.unwrap(Session.class);
+//
+//        try {
+//            Criteria cr = session.createCriteria(Whisky.class);
+//            cr.createAlias("distilleries", "distillery");
+//            cr.add(Restrictions.eq("distillery.region", region));
+//            cr.list();
+//        } catch(HibernateException ex) {
+//            ex.printStackTrace();
+//        }
+//
+//        return results;
+//    }
 }
